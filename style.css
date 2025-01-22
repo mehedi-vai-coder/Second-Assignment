@@ -38,7 +38,6 @@ body{
     justify-content:space-around;
     align-items: center;
     margin: 20px auto;
-    
 }
 .head-smile{
     height: 62px;
@@ -98,7 +97,7 @@ body{
 /*  Card section */
 .card-section{
     padding: 0 100px;
-    background-image: url(/assets/bg.png);
+    background-image: url(assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -100px;
@@ -300,6 +299,7 @@ background-color: #5D58F0;
         flex-direction: column-reverse;
         padding: 0;
         margin: 0;
+        text-align: center;
     }
     .head-icon{
         margin-right: 250px;
@@ -310,7 +310,10 @@ background-color: #5D58F0;
      }
     .card-container{
         flex-direction: column;
-        padding: 10px;
+    }
+    .card-section{
+        padding: 0 0;
+        margin: auto;
     }
     .head-nav, .head-button, .head-title {
         display: none;
@@ -319,10 +322,12 @@ background-color: #5D58F0;
         width: 100%;
     }
     .Grid-section{
-        padding-right: 150px;
+        align-items: center;
+        padding:0 0;
+        justify-content: flex-start;
     }
     .grid-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,2fr);
     }
     .grid-content{
         display: none;
