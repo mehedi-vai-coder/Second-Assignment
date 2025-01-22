@@ -38,7 +38,7 @@ main{
 
 /* header style */
 .header-container{
-    background-color: #01ACFD;
+    /* background-color: #01ACFD; */
     justify-content:space-around;
     align-items: center;
 }
@@ -148,6 +148,7 @@ main{
 /* Grid section */
 .Grid-section{
     background-image: url(/assets/bg.png),linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.5));
+    background-position: 0;
     background-repeat: repeat;
     background-size: contain;
     padding: 0 150px;
@@ -238,27 +239,64 @@ background-color: #5D58F0;
 
 
 /* Footer section */
-footer{
-    background-color: #01ACFD;
-    padding: 100px;
-}
 .footer-container{
-    /* max-width: 1140px; */
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding:100px;
+    background-color: #01ACFD;
 }
+.footer-icon{
+    object-fit:contain;
+}
+.about-item ul{
+        list-style-type: none;
+        
+}
+.about-item{
+    margin-left: 172px;
+}
+.about-item ul li {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+.about-title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+.about-des{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.about-titile2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+}
+.foot-icons{
+    margin-left: 140px;
+}
+
+
 
 
 
 @media screen and (max-width:576px) {
     .hero-container{
         flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+        
         /* margin: 78px 16px; */
     }
     .card-container{
         flex-direction: column;
-        margin: auto;
+        padding: 10px;
     }
     .head-nav{
         display: none;
@@ -266,15 +304,28 @@ footer{
     .hero-img1{
         width: 100%;
     }
+    .Grid-section{
+        padding-right: 150px;
+    }
     .grid-container{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,1fr);
-
     }
     .grid-content{
         display: none;
     }
     .grid-btn{
         margin-left: 60px;
+    }
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .foot-icons{
+    margin: 0px;
+    }
+    .about-item{
+        margin: 0;
+    }
+    .footer-container{
+        padding: 10px;
     }
 }
