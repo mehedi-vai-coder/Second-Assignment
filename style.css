@@ -31,7 +31,13 @@ body{
     color: #5D58EF;
 }
 
-
+/* Challenges part */
+marquee{
+    font-size: 40px;
+    font-weight: 800;
+    color: #111313;
+    font-family: "Quicksand", serif;
+    }
 
 /* header style */
 .header-container{
@@ -156,7 +162,7 @@ body{
 
 /* Grid section */
 .Grid-section{
-    background-image: url(/assets/bg.png),linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.5));
+    background-image: url(assets/bg.png),linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.5));
     background-position: 0;
     background-repeat: repeat;
     background-size: contain;
@@ -258,11 +264,14 @@ background-color: #5D58F0;
     margin-top: 27px;
 }
 .footer-icon{
-    object-fit:contain;
+  object-fit: scale-down;
 }
 .about-item ul{
         list-style-type: none;
         
+}
+.foot-gap{
+    gap: 15px;
 }
 .about-item{
     margin-left: 172px;
