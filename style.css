@@ -283,7 +283,7 @@ background-color: #5D58F0;
     font-weight: 400;
     margin-top: 5px;
 }
-.about-titile2{
+.about-title2{
     font-size: 1.75rem;
     font-weight: 600;
     color: white;
@@ -334,13 +334,15 @@ background-color: #5D58F0;
         display: none;
     }
     .grid-btn{
-        margin: auto;
+       margin: 30px 0 40px 90px;
+        
     }
     .footer-container{
         grid-template-columns: repeat(1,1fr);
     }
     .foot-icons{
     margin: 0px;
+    
     }
     .about-item{
         margin: 0;
